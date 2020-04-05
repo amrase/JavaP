@@ -14,14 +14,14 @@ public class MinimumElement {
         scanner.nextLine();
 
         int[] returnedArray = readIntegers(count);
-//        int returnedMin = findMin(returnedArray);
-//
-//        System.out.println("Min= " + returnedMin);
+        int returnedMin = findMin(returnedArray);
+        System.out.println("Min= " + returnedMin);
         System.out.println("Array"  + Arrays.toString(returnedArray));
 
         reverse(returnedArray);
 
-         System.out.println("Reversed Array"+Arrays.toString(returnedArray));
+        System.out.println("Reversed Array"+Arrays.toString(returnedArray));
+
 
     }
 
@@ -42,9 +42,10 @@ public class MinimumElement {
     private static int findMin(int[] array) {
         //Highest value that an integer can hold
         int min = Integer.MAX_VALUE;
-
+        System.out.println(min);
         for (int i = 0; i < array.length; i++) {
             int value = array[i];
+            System.out.println("Value" + value + " array["+i+"]");
             if (value < min) {
                 min = value;
             }
