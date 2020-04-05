@@ -58,18 +58,16 @@ public class Main {
     }
 
     public static void modifyItem(){
-        System.out.print("Enter item number ");
+        System.out.print("Current item name ");
         String itemNumber = scanner.nextLine();
-        scanner.nextLine();
         System.out.println("Enter replacement item: ");
         String newItem = scanner.nextLine();
         groceryList.modifyGroceryItem(itemNumber,newItem);
     }
 
     public static void removeItem(){
-        System.out.print("Enter item number ");
+        System.out.print("Enter item name ");
         String itemNo = scanner.nextLine();
-        scanner.nextLine();
         groceryList.removeGroceryItem(itemNo);
     }
 
@@ -83,6 +81,11 @@ public class Main {
         else{
             System.out.println(searchItem+ " is not in the search list");
         }
+    }
+
+
+    public static void proccessArray(){
+
     }
 
 }
