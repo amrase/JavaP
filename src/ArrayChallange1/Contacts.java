@@ -1,8 +1,8 @@
 package ArrayChallange1;
 
 public class Contacts {
-    private String name;
-    private String phoneNumber;
+  private String name;
+  private String phoneNumber;
 
     public Contacts(String name, String phoneNumber) {
         this.name = name;
@@ -17,6 +17,8 @@ public class Contacts {
         return phoneNumber;
     }
 
+
+    //Create new Contact
     public static Contacts createContact(String name,String phoneNumber){
         return new Contacts(name,phoneNumber);
     }
